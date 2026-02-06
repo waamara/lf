@@ -3,7 +3,7 @@ const express  = require("express");
 const app = express();   
 
 app.get("/", (req, res)  => {
-    res.send ("LF aapi is runnig "); 
+    res.send ("LF api is runnig "); 
 }); 
 
 const  PORT =  5000 ;  
