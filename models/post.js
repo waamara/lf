@@ -16,12 +16,17 @@ const postShema  = new mongoose.Shema ({
     location :{
         type : String , 
         required : true , 
-    } 
+    },
 
     Type : {
         type : String ,  
         enum : ['Lost'  , 'Found'], 
         required : true  , 
+    },
+    },
+    
+    {
+        timestamps : true , 
+    },
+);
 
-    }
-})
