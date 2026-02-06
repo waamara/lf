@@ -7,4 +7,6 @@ app.get("/", (req, res)  => {
 } ); 
 
 const  PORT =  5000 ;  
-
+app.listen(PORT,  () =>  {
+    console.log('server is running pn prt 5000'); 
+});
