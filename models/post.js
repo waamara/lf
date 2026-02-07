@@ -30,4 +30,4 @@ const postShema  = new mongoose.Shema ({
     },
 );
 
-module.exports =  mongoose.model('Post' ,  postShema); 
+module.exports =  mongoose.model('Post' ,  postShema); aaaaaaaaaa
