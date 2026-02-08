@@ -28,4 +28,4 @@ router.get("/",  async(req, res) => {
 });
 
 // Delete a post 
-router.delete("/.id")
+router.delete("/id")
