@@ -1,23 +1,22 @@
-const express  = require("express"); 
-const connectDB = require("./config/db.js"); 
+const express = require("express");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 const postRoutes = require("./routes/PostRoutes");
 
-dotenv.config(); 
-connectDB();  
-const app = express();   
+dotenv.config();
+connectDB();
+
+const app = express();
 app.use(express.json());
 
-
-
-
-app.get("/", (req, res)  => {
-    res.send ("LF api is runnig "); 
-}); 
-
+app.get("/", (req, res) => {
+    res.send("LF api is running");
+});
 
 app.use("/api/posts", postRoutes);
-const PORT = process.env.PORT || 5000;
-app.listen(PORT,  () =>  {
-    console.log('server is running on port 5000'); 
+
+const PORT =  5000;
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
+
 });
