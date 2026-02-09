@@ -33,7 +33,7 @@ router.get("/:id", async(req, res) =>{
         res.json(post);
     }
     catch (error) {
-        
+        res.status(500).json({ messgae: " invalid ID "});
     }
 })
 
