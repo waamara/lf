@@ -1,6 +1,6 @@
 const mongoose = require('mongoose'); 
 
-const postShema  = new mongoose.Shema ({
+const postShema  = new mongoose.Schema ({
     tittle : { 
         type : String ,  
         required  : true , 
@@ -10,7 +10,7 @@ const postShema  = new mongoose.Shema ({
 
     description  : {
         type : String ,  
-        required, 
+        required : true, 
     }, 
 
     location :{
