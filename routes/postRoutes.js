@@ -24,6 +24,14 @@ router.get("/", async (req, res) => {
 });
 
 // Get a post by id 
+router.get("/:id", async(req, res) =>{
+    try {
+
+    }
+    catch (error) {
+        
+    }
+})
 
 // DELETE a post
 router.delete("/:id", async (req, res) => {
